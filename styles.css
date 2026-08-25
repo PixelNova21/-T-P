@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;   
+}
+.wrapper { 
+    background-color: rgba(255, 255, 255, 0.8);/*напівпрозорий білий фон*/
+    border: 2px solid black;/*чорна рамка*/
+    display: inline-block;/*щоб рамка обгортала текст*/
+    padding: 15px;/*внутрішній відступ*/
+    margin: 20px auto;/*відступи зверху/знизу та по центру*/
+}
+h1 {
+    font-size: 36px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+img { 
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+.menu { 
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 25px;
+padding: 15px;
+background-color: #222;
+}
+.menu a { 
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.menu a:hover {
+color: #00aaff;
+}
+/*Для телефону*/
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .menu a {
+        font-size: 17px;
+    }
+}
+body {
+    background-image: url('90.png');
+    background-size: cover;/*щоб заповнювало весь екран*/
+    background-repeat:no-repeat;/*щоб не повторювалося*/
+background-position: center;
+width: 100%;
+min-height: 100vh;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: none;
+}
+.hero {
+    background-image: url(90.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;/*Верхня секція на весь екран*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(6, 6, 6, 0.823);/*Колір тексту на фоні*/
+}
+.hero-content {
+    background: rgba(0, 0, 0, 0.45);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px 35px;
+    text-align: center;
+    color: wheat;
+}
+.arrow {
+    color: white;
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+.ingredient img {
+    max-width: 200px;
+    height: auto;
+}
+.arrow {
+    font-size: 50px;
+    color: wheat;
+    margin-top: 20px;
+}
+
+.ingredients {
+    background: white;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.ingredient img {
+    width: 220px;
+    height: 220px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.ingredient {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 60px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.text {
+    text-align: left;
+}
+.text h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.text p {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background: #5caf50;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.home-hero {
+    background-image: url("90.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-photo {
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+
+nav {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+nav a {
+    color: wheat;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 8px 15px;
+}
+nav a:hover {
+    color: #d9c28f;
+}
+
+.ingredients-page img {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    width: 200px;
+}
+.ingredients-page .ingredient {
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+}
+.cart a {
+    font-size: 35px;
+    padding: 8px 15px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.cart {
+    margin-left: 0px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart {
+    order: -1;
+    margin-right: 30px;
+}
+.cart::marker {
+    content: "";
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .ingredient {
+        grid-template-columns: 160px 1fr;
+        gap: 30px;
+    }
+.ingredient img {
+    width: 160px;
+    height: 160px;
+}
+.text h2 {
+    font-size: 24px;
+}
+.text p {
+    font-size: 16px;
+}
+.ingredients {
+    padding: 40px 20px;
+    gap: 35px;
+}
+}
+
+@media (max-width: 600px) {
+.ingredient {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+}
+.ingredient img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.text {
+    text-align: center;
+}
+.text h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.ingredients {
+    padding: 30px 15px;
+    gap: 45px;
+}
+nav ul {
+    flex-wrap: wrap;
+    gap: 5px;
+}
+nav a {
+    font-size: 18px;
+    padding: 6px 10px;
+}
+}
